@@ -1,4 +1,4 @@
-namespace TrafficWeb.Models
+namespace WarlockMVC.Models
 {
     public class ErrorViewModel
     {

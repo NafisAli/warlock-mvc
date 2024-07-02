@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using TrafficWeb.Models;
+using WarlockMVC.Models;
 
-namespace TrafficWeb.Controllers
+namespace WarlockMVC.Controllers
 {
     public class HomeController : Controller
     {
