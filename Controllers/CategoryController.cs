@@ -8,7 +8,7 @@ namespace WarlockMVC.Controllers
     {
         private readonly ApplicationDbContext _db;
 
-        public CategoryController(ApplicationDbContext db) 
+        public CategoryController(ApplicationDbContext db)
         {
             _db = db;
         }
@@ -28,6 +28,8 @@ namespace WarlockMVC.Controllers
         [HttpPost]
         public IActionResult Create(Category obj)
         {
+            if (!ModelState.IsValid) return View();
+
             _db.Categories.Add(obj);
             _db.SaveChanges();
 
